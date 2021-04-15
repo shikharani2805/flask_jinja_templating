@@ -1,0 +1,10 @@
+pip install flask
+pip install jinja2
+virtualenv
+
+
+
+
+
+
+ 

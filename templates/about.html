@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<h1>ABOUT  SECTION</h1>
+<hr>
+ <br>
+ 
+ <div>
+    <h3>Date Of Birth: {{ dob }}</h3>
+    
+</div>
+<br>
+<div>
+    <h2>EDUCATION</h2>
+    <hr>
+    <br>
+    {% for name in edu %}
+    
+    <pre><h3>{{ name }}</h3></pre>
+
+    {%endfor %}
+ 
+</div>
+<br>
+<div>
+    <h2>EXPERIENCE</h2>
+    <hr>
+    <br>
+   
+    <pre><h3>{{ exp }}</h3></pre>
+
+</div>
+
+{% endblock %}
