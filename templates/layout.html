@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ {% block head %}
+
+ <title>{% block title %}{% endblock %}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!-- <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+ <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(158, 130, 236);
+}
+  
+  li {
+    float: left;
+  }
+  
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .head {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .color {
+    color:rgb(60, 14, 226);
+  }
+  
+
+  div.ex1 {
+  /* height: 200px; */
+  /* width: 1800px; */
+  margin: auto;
+  /* border: 3px solid #121312; */
+}
+
+  </style>
+
+
+
+ {% endblock %}
+</head>
+<div class="ex1">
+<body style="background-color:rgb(180, 159, 236);">
+
+
+<div class="navbar">
+ <ul class="head">
+  <li><a href="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+  <li><a href="about"><i class="fa fa-fw fa-user"></i>About</a></li>
+  <li><a href="contact"><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+</ul>
+</div>
+</div>
+
+{% block body %} {% endblock %}
+
+</body>
+</html> 

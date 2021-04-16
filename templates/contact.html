@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div style="text-align:center;">
+<div class="color">
+<h1>CONTACT  SECTION</h1>
+</div>
+
+ <br>
+ 
+<div>
+    {% for name in email %}
+    
+    <pre><h2>gmail id: &nbsp; {{ name }}</h2></pre>
+
+    {%endfor %}
+</div>
+<div>
+    <h1> Social Links</h1>
+
+    <h2 ><pre>{{ Llink }}: <a style="color:rgb(236, 20, 164);" href="https://www.linkedin.com/in/shikharani2805/" target="_blank">LinkedIn Profile</a></pre></h2>
+    
+
+    <h2><pre>{{ Glink }}: <a style="color:rgb(236, 20, 164);" href="https://github.com/shikharani2805" target="_blank">Github Profile</a></pre></h2>
+    
+    
+</div>
+</div>
+{% endblock %}

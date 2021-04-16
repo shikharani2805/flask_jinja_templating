@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<div style="text-align:center;">
+
+<div>
+    {% for name in dic %}
+    
+    <h1><pre>{{ name }}</pre></h1>
+
+    {%endfor %}
+  
+</div>
+
+
+<div>
+    <div class="color">
+    <h1>EDUCATION</h1>
+    </div>  
+
+
+    {% for name in edu %}
+    
+    <pre><h3>{{ name }}</h3></pre>
+
+    {%endfor %}
+ 
+</div>
+
+<div>
+    <div class="color">
+    <h1>EXPERIENCE</h1>
+    </div>
+    
+    
+
+    {% for name in exp %}
+   
+    <h3><pre>{{ name }}</pre></h3>
+
+    {%endfor %}
+
+</div>
+
+<div class="color">
+<h2>CONTACT</h2>
+</div>
+
+
+ 
+<div>
+    {% for name in email %}
+    
+    <h3><pre>gmail id: {{ name }}</pre></h3>
+
+    {%endfor %}
+</div>
+<div>
+    
+    <h2>Social Links</h2>
+
+
+    <h3><pre>{{ Llink }}: <a style="color:rgb(236, 20, 164);" href="https://www.linkedin.com/in/shikharani2805/" target="_blank">LinkedIn Profile</a></pre></h3>
+    
+
+    <h3><pre>{{ Glink }}: <a style="color:rgb(236, 20, 164);" href="https://github.com/shikharani2805" target="_blank">Github Profile</a></pre></h3>  
+    
+</div>
+
+
+
+{% endblock %}

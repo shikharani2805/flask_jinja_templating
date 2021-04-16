@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div style="text-align:center;">
+<div class="color">
+<h1>ABOUT  SECTION</h1>
+</div>
+
+ <br>
+ 
+ <div>
+    <h2>Date Of Birth: {{ dob }}</h2>
+    
+</div>
+<br>
+<div>
+    <div class="color">
+    <h1>EDUCATION</h1>
+    </div>
+  
+    <br>
+    {% for name in edu %}
+    
+    <pre><h2>{{ name }}</h2></pre>
+
+    {%endfor %}
+ 
+</div>
+<br>
+<div>
+    <div class="color">
+    <h1>EXPERIENCE</h1>
+    </div>
+
+    <br>
+   
+    <pre><h2>{{ exp }}</h2></pre>
+
+</div>
+</div>
+{% endblock %}
